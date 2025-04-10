@@ -7,37 +7,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Dados do usuário e variaveis de controle
     let userNome;
-    let messageCount = 0;
+    let messageCount;
     let opcaoAjuda;
     let falarNome = false;
     let firstMessage = true;
     let realizandoTeste = false;
     let softSkills = [
-        { nome: "Empatia", pontuacao: 0 },
-        { nome: "Comunicação", pontuacao: 0 },
-        { nome: "Trabalho em equipe", pontuacao: 0 },
-        { nome: "Resiliência", pontuacao: 0 },
-        { nome: "Criatividade", pontuacao: 0 },
-        { nome: "Proatividade", pontuacao: 0 },
-        { nome: "Liderança", pontuacao: 0 },
-        { nome: "Adaptabilidade", pontuacao: 0 },
-        { nome: "Organização", pontuacao: 0 },
-        { nome: "Inteligência emocional", pontuacao: 0 },
-        { nome: "Autonomia", pontuacao: 0 },
-        { nome: "Escuta ativa", pontuacao: 0 },
-        { nome: "Relacionamento interpessoal", pontuacao: 0 },
-        { nome: "Humildade", pontuacao: 0 },
-        { nome: "Assertividade", pontuacao: 0 },
-        { nome: "Curiosidade", pontuacao: 0 },
-        { nome: "Disciplina", pontuacao: 0 },
-        { nome: "Coragem", pontuacao: 0 },
-        { nome: "Foco", pontuacao: 0 },
-        { nome: "Autocrítica", pontuacao: 0 },
-        { nome: "Melhoria contínua", pontuacao: 0 },
-        { nome: "Planejamento", pontuacao: 0 },
-        { nome: "Estética", pontuacao: 0 },
-        { nome: "Improvisação", pontuacao: 0 }
-    ];    
+        { nome: "Empatia", pontuacao: 0, descricao: "Capacidade de se colocar no lugar do outro." },
+        { nome: "Comunicação", pontuacao: 0, descricao: "Habilidade de se expressar e ouvir com clareza." },
+        { nome: "Trabalho em equipe", pontuacao: 0, descricao: "Colaboração eficaz com outras pessoas." },
+        { nome: "Resiliência", pontuacao: 0, descricao: "Capacidade de lidar com dificuldades e se recuperar." },
+        { nome: "Criatividade", pontuacao: 0, descricao: "Capacidade de gerar ideias novas e resolver problemas de forma inovadora." },
+        { nome: "Proatividade", pontuacao: 0, descricao: "Agir antes que os problemas apareçam, tomar iniciativa." },
+        { nome: "Liderança", pontuacao: 0, descricao: "Guiar, inspirar e influenciar positivamente os outros." },
+        { nome: "Adaptabilidade", pontuacao: 0, descricao: "Flexibilidade para lidar com mudanças e novos contextos." },
+        { nome: "Organização", pontuacao: 0, descricao: "Planejamento e controle eficaz do tempo e tarefas." },
+        { nome: "Inteligência emocional", pontuacao: 0, descricao: "Reconhecer e gerenciar as próprias emoções e as dos outros." },
+        { nome: "Autonomia", pontuacao: 0, descricao: "Capacidade de agir com independência e responsabilidade." },
+        { nome: "Escuta ativa", pontuacao: 0, descricao: "Ouvir com atenção e compreensão real do outro." },
+        { nome: "Relacionamento interpessoal", pontuacao: 0, descricao: "Habilidade de se relacionar bem com outras pessoas." },
+        { nome: "Humildade", pontuacao: 0, descricao: "Reconhecer limitações e valorizar os outros." },
+        { nome: "Assertividade", pontuacao: 0, descricao: "Expressar ideias e sentimentos com clareza e respeito." },
+        { nome: "Curiosidade", pontuacao: 0, descricao: "Desejo de aprender e descobrir coisas novas." },
+        { nome: "Disciplina", pontuacao: 0, descricao: "Manter foco e constância para cumprir tarefas e objetivos." },
+        { nome: "Coragem", pontuacao: 0, descricao: "Enfrentar desafios e riscos com firmeza." },
+        { nome: "Foco", pontuacao: 0, descricao: "Concentrar-se no que é importante, evitando distrações." },
+        { nome: "Autocrítica", pontuacao: 0, descricao: "Capacidade de refletir e reconhecer os próprios erros." },
+        { nome: "Melhoria contínua", pontuacao: 0, descricao: "Buscar evoluir constantemente em tudo que faz." },
+        { nome: "Planejamento", pontuacao: 0, descricao: "Definir metas, estratégias e ações para alcançar objetivos." },
+        { nome: "Estética", pontuacao: 0, descricao: "Atenção à harmonia visual e bom gosto nas apresentações." },
+        { nome: "Improvisação", pontuacao: 0, descricao: "Responder com criatividade e rapidez a situações inesperadas." }
+    ];
+
+        //Debug
+        /* messageCount = 7
+        softSkills = [
+            { nome: "Empatia", pontuacao: 3, descricao: "Capacidade de se colocar no lugar do outro." },
+            { nome: "Comunicação", pontuacao: 2, descricao: "Habilidade de se expressar e ouvir com clareza." },
+            { nome: "Trabalho em equipe", pontuacao: 1, descricao: "Colaboração eficaz com outras pessoas." }
+        ]; */
 
     // Mensagem inicial do bot
     addBotMessage('Olá! Antes de iniciar, digite seu nome abaixo.', 1000);
@@ -114,6 +122,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function calcularPontuacaoSoftSkills(time){
+        let melhoresSkills = softSkills.sort((a, b) => b.pontuacao - a.pontuacao).slice(0, 3)
+        setTimeout(() => {
+            addBotMessage('🥇 ' + softSkills[0].nome + ' - ' + softSkills[0].descricao + espaco + '🥈 ' + softSkills[1].nome + ' - ' + softSkills[1].descricao + espaco + '🥉 ' + softSkills[2].nome + ' - ' + softSkills[2].descricao) 
+        }, time)
+    }
+
     function handleUserMessage(messageFromButton = null) {
         disabledChat();
 
@@ -153,7 +168,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 2:
                     opcao = messageFromButton?.value || message;
                     if(opcao == 1){
-                        //Sobre soft skills
+                        //Fazer sobre soft skills
+                        break;
                     }
                     if(opcao == 2){
                         opcaoAjuda = 1;
@@ -166,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     } else if (opcao == 3){
                         opcaoAjuda = 2;
                         addBotMessage('Então você procura por materiais gratuitos, né?')
-                        // Materiais
+                        // Fazer a parte dos materiais
                         break;
                     }
                 case 3:
@@ -337,7 +353,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         { text: 'Ignoro, não dou muita importância e sigo em frente.', value: 4 }
                     ], 6000);
                     break;
-                
                 case 8:
                     resposta = messageFromButton?.value || message;
                     switch(resposta){
@@ -361,8 +376,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                     addBotMessage('Muito bem! Terminamos o questionário.', 1000);
                     addBotMessage('Agora vou calcular quais são suas principais soft skills...', 2000);
-                    // Aqui você pode chamar a função de resultados
-                    break;                    
+                    addBotMessage('Parabéns! Aqui está suas melhores Soft Skills:', 5000)
+                    calcularPontuacaoSoftSkills(6000);
+                    addBotMessage('Também idenficamos que você precisa melhorar em alguns pontos', 8000)
+                    addBotMessage('Deseja saber também quais são seus pontos fracos?', 9000)
+                    addOptions([{text: 'Sim', value: 1}, {text: 'Não', value: 2}], 9500)
+                    break;   
+                case 9:
+                    resposta = messageFromButton?.value || message 
+                    if(resposta == 1){
+                        //Fazer a parte dos pontos fracos.
+                        break;
+                    } else if(resposta == 2){
+                        addBotMessage('Certo, estarei te enviando para o menu!', 1000)
+                        addBotMessage('Muito obrigado por utilizar nosso Quiz! :)', 2000)
+                        messageCount = 1;
+                        menu(4000);
+                        break;
+                    }
                 default: 
                     addBotMessage(`Não entendi, poderia escolher uma opção novamente?`, 1000);
                     messageCount--;
@@ -372,7 +403,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     sendBtn.addEventListener('click', handleUserMessage);
-
     userInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
             handleUserMessage();
