@@ -91,6 +91,26 @@ section {
     margin-right: auto;
 }
 
+.bot-message-button {
+    max-width: 80%;
+    border-radius: 15px;
+    animation: fadeIn 0.3s ease-in;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    word-break: break-word;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.bot-message-button button{
+    background-color: #3f73a2;
+    padding: 0.8rem 1.2rem;
+    aspect-ratio: 0;
+    font-size: 0.95rem;
+    border-radius: 15px;
+}
+
 .input-group {
     display: flex;
     gap: 0.8rem;
