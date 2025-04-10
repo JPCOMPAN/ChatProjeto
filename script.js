@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Dados do usuário e variaveis de controle
     let userNome;
-    let messageCount;
+    let messageCount = 0;
     let opcaoAjuda;
     let falarNome = false;
     let firstMessage = true;
@@ -40,12 +40,14 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
         //Debug
-        /* messageCount = 7
+        /*
+        messageCount = 0
         softSkills = [
-            { nome: "Empatia", pontuacao: 3, descricao: "Capacidade de se colocar no lugar do outro." },
-            { nome: "Comunicação", pontuacao: 2, descricao: "Habilidade de se expressar e ouvir com clareza." },
+            { nome: "Empatia", pontuacao: -3, descricao: "Capacidade de se colocar no lugar do outro." },
+            { nome: "Comunicação", pontuacao: -5, descricao: "Habilidade de se expressar e ouvir com clareza." },
             { nome: "Trabalho em equipe", pontuacao: 1, descricao: "Colaboração eficaz com outras pessoas." }
-        ]; */
+        ];
+        */
 
     // Mensagem inicial do bot
     addBotMessage('Olá! Antes de iniciar, digite seu nome abaixo.', 1000);
@@ -118,20 +120,25 @@ document.addEventListener('DOMContentLoaded', () => {
         const skill = softSkills.find(s => s.nome === nome);
         if (skill) {
             skill.pontuacao += valor;
-            if (skill.pontuacao < 0) skill.pontuacao = 0; // opcional: evita pontuação negativa
         }
     }
 
     function calcularPontuacaoSoftSkills(time){
         let melhoresSkills = softSkills.sort((a, b) => b.pontuacao - a.pontuacao).slice(0, 3)
         setTimeout(() => {
-            addBotMessage('🥇 ' + softSkills[0].nome + ' - ' + softSkills[0].descricao + espaco + '🥈 ' + softSkills[1].nome + ' - ' + softSkills[1].descricao + espaco + '🥉 ' + softSkills[2].nome + ' - ' + softSkills[2].descricao) 
+            addBotMessage('🥇 ' + melhoresSkills[0].nome + ' - ' + melhoresSkills[0].descricao + espaco + '🥈 ' + melhoresSkills[1].nome + ' - ' + melhoresSkills[1].descricao + espaco + '🥉 ' + melhoresSkills[2].nome + ' - ' + melhoresSkills[2].descricao) 
+        }, time)
+    }
+
+    function buscarPioresSoftSkills(time){
+        let pioresSkills = softSkills.sort((a, b) => a.pontuacao - b.pontuacao).slice(0, 3)
+        setTimeout(() => {
+            addBotMessage('⚠️ 3. ' + pioresSkills[2].nome + ' - ' + pioresSkills[2].descricao + ' - Pontuação: ' + pioresSkills[2].pontuacao + espaco + '⚠️ 2. ' + pioresSkills[1].nome + ' - ' + pioresSkills[1].descricao + ' - Pontuação: ' + pioresSkills[1].pontuacao + espaco + '⚠️ 1. ' + pioresSkills[0].nome + ' - ' + pioresSkills[0].descricao + ' - Pontuação: ' + pioresSkills[0].pontuacao)
         }, time)
     }
 
     function handleUserMessage(messageFromButton = null) {
         disabledChat();
-
         if (messageFromButton instanceof Event) {
             messageFromButton = null;
         }
@@ -143,8 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        console.log(message)
-
         let opcao;
         if (message) {
             messageCount++;
@@ -154,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 addUserMessage(message.text);
             }
             userInput.value = '';
-            console.log(messageCount)
+
             // Chatbot
             switch(messageCount){
                 case 1:
@@ -374,6 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             pontuarSoftSkill("Melhoria contínua", -2);
                             break;
                     }
+                    console.log(softSkills)
                     addBotMessage('Muito bem! Terminamos o questionário.', 1000);
                     addBotMessage('Agora vou calcular quais são suas principais soft skills...', 2000);
                     addBotMessage('Parabéns! Aqui está suas melhores Soft Skills:', 5000)
@@ -385,7 +391,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 9:
                     resposta = messageFromButton?.value || message 
                     if(resposta == 1){
-                        //Fazer a parte dos pontos fracos.
+                        addBotMessage(`Ok ${userName}, essas foram suas piores Soft Skills:`, 1000)
+                        buscarPioresSoftSkills(2000)
+                        //Colocar os materiais aqui
                         break;
                     } else if(resposta == 2){
                         addBotMessage('Certo, estarei te enviando para o menu!', 1000)
