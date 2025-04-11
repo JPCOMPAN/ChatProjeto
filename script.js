@@ -391,7 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 9:
                     resposta = messageFromButton?.value || message 
                     if(resposta == 1){
-                        addBotMessage(`Ok ${userName}, essas foram suas piores Soft Skills:`, 1000)
+                        addBotMessage(`Ok ${userNome}, essas foram suas piores Soft Skills:`, 1000)
                         buscarPioresSoftSkills(2000)
                         //Colocar os materiais aqui
                         break;
