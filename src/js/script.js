@@ -12,42 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let falarNome = false;
     let firstMessage = true;
     let realizandoTeste = false;
-    let softSkills = [
-        { nome: "Empatia", pontuacao: 0, descricao: "Capacidade de se colocar no lugar do outro." },
-        { nome: "Comunicação", pontuacao: 0, descricao: "Habilidade de se expressar e ouvir com clareza." },
-        { nome: "Trabalho em equipe", pontuacao: 0, descricao: "Colaboração eficaz com outras pessoas." },
-        { nome: "Resiliência", pontuacao: 0, descricao: "Capacidade de lidar com dificuldades e se recuperar." },
-        { nome: "Criatividade", pontuacao: 0, descricao: "Capacidade de gerar ideias novas e resolver problemas de forma inovadora." },
-        { nome: "Proatividade", pontuacao: 0, descricao: "Agir antes que os problemas apareçam, tomar iniciativa." },
-        { nome: "Liderança", pontuacao: 0, descricao: "Guiar, inspirar e influenciar positivamente os outros." },
-        { nome: "Adaptabilidade", pontuacao: 0, descricao: "Flexibilidade para lidar com mudanças e novos contextos." },
-        { nome: "Organização", pontuacao: 0, descricao: "Planejamento e controle eficaz do tempo e tarefas." },
-        { nome: "Inteligência emocional", pontuacao: 0, descricao: "Reconhecer e gerenciar as próprias emoções e as dos outros." },
-        { nome: "Autonomia", pontuacao: 0, descricao: "Capacidade de agir com independência e responsabilidade." },
-        { nome: "Escuta ativa", pontuacao: 0, descricao: "Ouvir com atenção e compreensão real do outro." },
-        { nome: "Relacionamento interpessoal", pontuacao: 0, descricao: "Habilidade de se relacionar bem com outras pessoas." },
-        { nome: "Humildade", pontuacao: 0, descricao: "Reconhecer limitações e valorizar os outros." },
-        { nome: "Assertividade", pontuacao: 0, descricao: "Expressar ideias e sentimentos com clareza e respeito." },
-        { nome: "Curiosidade", pontuacao: 0, descricao: "Desejo de aprender e descobrir coisas novas." },
-        { nome: "Disciplina", pontuacao: 0, descricao: "Manter foco e constância para cumprir tarefas e objetivos." },
-        { nome: "Coragem", pontuacao: 0, descricao: "Enfrentar desafios e riscos com firmeza." },
-        { nome: "Foco", pontuacao: 0, descricao: "Concentrar-se no que é importante, evitando distrações." },
-        { nome: "Autocrítica", pontuacao: 0, descricao: "Capacidade de refletir e reconhecer os próprios erros." },
-        { nome: "Melhoria contínua", pontuacao: 0, descricao: "Buscar evoluir constantemente em tudo que faz." },
-        { nome: "Planejamento", pontuacao: 0, descricao: "Definir metas, estratégias e ações para alcançar objetivos." },
-        { nome: "Estética", pontuacao: 0, descricao: "Atenção à harmonia visual e bom gosto nas apresentações." },
-        { nome: "Improvisação", pontuacao: 0, descricao: "Responder com criatividade e rapidez a situações inesperadas." }
+    
+    //Debug
+    messageCount = 8
+    softSkills = [
+        { nome: "Empatia", pontuacao: -3, descricao: "Capacidade de se colocar no lugar do outro." },
+        { nome: "Comunicação", pontuacao: -5, descricao: "Habilidade de se expressar e ouvir com clareza." },
+        { nome: "Trabalho em equipe", pontuacao: 1, descricao: "Colaboração eficaz com outras pessoas." }
     ];
-
-        //Debug
-        /*
-        messageCount = 0
-        softSkills = [
-            { nome: "Empatia", pontuacao: -3, descricao: "Capacidade de se colocar no lugar do outro." },
-            { nome: "Comunicação", pontuacao: -5, descricao: "Habilidade de se expressar e ouvir com clareza." },
-            { nome: "Trabalho em equipe", pontuacao: 1, descricao: "Colaboração eficaz com outras pessoas." }
-        ];
-        */
 
     // Mensagem inicial do bot
     addBotMessage('Olá! Antes de iniciar, digite seu nome abaixo.', 1000);
@@ -138,7 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleUserMessage(messageFromButton = null) {
-        disabledChat();
         if (messageFromButton instanceof Event) {
             messageFromButton = null;
         }
@@ -160,6 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             userInput.value = '';
 
+            console.log(messageCount)
+
             // Chatbot
             switch(messageCount){
                 case 1:
@@ -169,11 +142,19 @@ document.addEventListener('DOMContentLoaded', () => {
                         falarNome = true;
                     }
                     menu(2000);
+                    disabledChat();
                 break;
                 case 2:
                     opcao = messageFromButton?.value || message;
                     if(opcao == 1){
-                        //Fazer sobre soft skills
+                        opcaoAjuda = 1;
+                        addBotMessage('Ah! Então você quer saber o que são SoftSkills né?', 1000)
+                        addBotMessage('Soft Skills são habilidades comportamentais, tipo como você se comunica, resolve problemas, lida com pressão ou trabalha em equipe.', 2000);
+                        addBotMessage('Elas não têm a ver com o que você sabe tecnicamente, mas com a forma como você age, pensa e se relaciona com os outros.', 4000);
+                        addBotMessage('Exemplos de Soft Skills: empatia, liderança, organização, criatividade, resiliência, entre outras.', 6000);
+                        addBotMessage('Elas são super valorizadas no mercado, porque mostram como você colabora, aprende e evolui com os desafios do dia a dia.', 8000);
+                        addBotMessage('Agora que você já sabe, bora descobrir quais são suas principais Soft Skills? 😎', 10000);
+                        addOptions([{text: 'Sim', value: 1}, {text: 'Não', value: 2}], 11500)
                         break;
                     }
                     if(opcao == 2){
@@ -186,17 +167,16 @@ document.addEventListener('DOMContentLoaded', () => {
                         break;
                     } else if (opcao == 3){
                         opcaoAjuda = 2;
-                        addBotMessage('Então você procura por materiais gratuitos, né?')
-                        // Fazer a parte dos materiais
+                        addBotMessage('Então você procura por materiais gratuitos sobre Soft Skills, né?', 1000)
+                        addBotMessage('Digite o nome de alguma Soft Skill que você deseja aprender mais sobre! :)', 2000)
+                        enableChat(2500);
                         break;
                     }
                 case 3:
                     if(opcaoAjuda == 1){
                         opcao = messageFromButton?.value || message;
                         if(opcao == 1){
-                            let opcaoEscolhida;
                             addBotMessage('Que legal! Então vamos começar:', 1000);
-
                             addBotMessage('Você está em um grupo e há um conflito entre dois colegas. O que você faz?', 2000);
                             addOptions([
                                 { text: 'Tento entender os dois lados e ajudar a encontrar um meio-termo.', value: 1 },
@@ -214,6 +194,23 @@ document.addEventListener('DOMContentLoaded', () => {
                             menu(4000);
                             break;
                         }
+                    } else if(opcaoAjuda == 2){
+                        let skillExiste = false;
+                        resposta = message;
+                        resposta = resposta.toLowerCase();
+                        softSkills.forEach((skill) => {
+                            console.log(skill.nome.toLowerCase())
+                            if(resposta == skill.nome.toLowerCase()){
+                                addBotMessage("Soft Skill Encontrada!", 1000)
+                                skillExiste = true;
+                                //Adicionar os matériais
+                            }
+                        })
+                        if(!skillExiste){
+                            addBotMessage("Não encontrei nenhuma Soft Skill com esse nome, tente novamente:", 1000)
+                            messageCount--
+                        }
+                        break;
                     }
                 case 4:
                     resposta = messageFromButton?.value || message;
@@ -244,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             break;
                     }
                     addBotMessage('Calculando...', 1000);
-                    addBotMessage('Certo, vamos para a próxima pergunta!', 4000);
+                    addBotMessage('Certo, vamos para a próxima pergunta!', 3000);
                     addBotMessage('Você recebe uma tarefa nova que nunca fez antes. O que faz?', 5000);
                     addOptions([
                         { text: 'Pesquiso por conta própria e tento resolver sozinho.', value: 1 },
@@ -253,7 +250,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         { text: 'Organizo um plano e defino o que preciso aprender antes de começar.', value: 4 }
                     ], 6000);
                     break;
-                
                 case 5:
                     resposta = messageFromButton?.value || message;
                     switch(resposta){
@@ -283,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             break;
                     }
                     addBotMessage('Calculando...', 1000);
-                    addBotMessage('Certo, vamos para a próxima pergunta!', 4000);
+                    addBotMessage('Certo, vamos para a próxima pergunta!', 3000);
                     addBotMessage('Você tem uma apresentação importante. Como se prepara?', 5000);
                     addOptions([
                         { text: 'Estudo bastante e ensaio sozinho até me sentir seguro.', value: 1 },
@@ -292,7 +288,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         { text: 'Crio slides bonitos e foco em deixar tudo visualmente organizado.', value: 4 }
                     ], 6000);
                     break;
-                
                 case 6:
                     resposta = messageFromButton?.value || message;
                     switch(resposta){
@@ -318,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             break;
                     }
                     addBotMessage('Calculando...', 1000);
-                    addBotMessage('Próxima pergunta!', 4000);
+                    addBotMessage('Próxima pergunta!', 3000);
                     addBotMessage('Você está atrasado para um compromisso e seu transporte quebra. O que faz?', 5000);
                     addOptions([
                         { text: 'Procuro imediatamente uma alternativa e sigo o caminho.', value: 1 },
@@ -327,7 +322,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         { text: 'Desisto de ir, já que o atraso compromete tudo.', value: 4 }
                     ], 6000);
                     break;
-                
                 case 7:
                     resposta = messageFromButton?.value || message;
                     switch(resposta){
@@ -349,7 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             break;
                     }
                     addBotMessage('Entendido...', 1000);
-                    addBotMessage('Vamos para a última pergunta!', 4000);
+                    addBotMessage('Vamos para a última pergunta!', 3000);
                     addBotMessage('Você recebeu um feedback negativo. O que faz?', 5000);
                     addOptions([
                         { text: 'Aceito e tento entender como posso melhorar.', value: 1 },
@@ -393,6 +387,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     if(resposta == 1){
                         addBotMessage(`Ok ${userNome}, essas foram suas piores Soft Skills:`, 1000)
                         buscarPioresSoftSkills(2000)
+                        addBotMessage("Gostaria de receber alguns matériais para aprender mais sobre essas Skills?", 4000)
+                        addOptions([{text: 'Sim', value: 1}, {text: 'Não', value: 2}], 4500)
                         //Colocar os materiais aqui
                         break;
                     } else if(resposta == 2){
@@ -402,6 +398,19 @@ document.addEventListener('DOMContentLoaded', () => {
                         menu(4000);
                         break;
                     }
+                case 10:
+                    resposta = messageFromButton?.value || message 
+                    if(resposta == 1){
+                        //Colocar os matériais aqui
+                        break;
+                    } else if(resposta == 2){
+                        addBotMessage('Certo, estarei te enviando para o menu!', 1000)
+                        addBotMessage('Muito obrigado por utilizar nosso Quiz! :)', 2000)
+                        messageCount = 1;
+                        menu(4000);
+                        break;
+                    }
+                    
                 default: 
                     addBotMessage(`Não entendi, poderia escolher uma opção novamente?`, 1000);
                     messageCount--;
