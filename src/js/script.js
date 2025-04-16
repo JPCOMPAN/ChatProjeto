@@ -12,14 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let falarNome = false;
     let firstMessage = true;
     let realizandoTeste = false;
-    
-    //Debug
-    messageCount = 8
-    softSkills = [
-        { nome: "Empatia", pontuacao: -3, descricao: "Capacidade de se colocar no lugar do outro." },
-        { nome: "Comunicação", pontuacao: -5, descricao: "Habilidade de se expressar e ouvir com clareza." },
-        { nome: "Trabalho em equipe", pontuacao: 1, descricao: "Colaboração eficaz com outras pessoas." }
-    ];
 
     // Mensagem inicial do bot
     addBotMessage('Olá! Antes de iniciar, digite seu nome abaixo.', 1000);
