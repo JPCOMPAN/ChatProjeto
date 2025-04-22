@@ -49,6 +49,40 @@ document.addEventListener('DOMContentLoaded', () => {
         }, time)
     }
 
+    function addImageOptions(options = [], time) {
+        setTimeout(() => {
+            const optionsDiv = document.createElement('div');
+            optionsDiv.classList.add('bot-message-cards');
+        
+            options.forEach(option => {
+                const card = document.createElement('div');
+                card.classList.add('bot-card');
+        
+                const image = document.createElement('img');
+                image.src = option.imagem;
+                image.alt = option.titulo;
+        
+                const title = document.createElement('div');
+                title.classList.add('bot-card-title');
+                title.textContent = option.titulo;
+        
+                const linkButton = document.createElement('a');
+                linkButton.classList.add('bot-card-link');
+                linkButton.textContent = 'Acessar';
+                linkButton.href = option.link;
+                linkButton.target = '_blank';
+        
+                card.appendChild(image);
+                card.appendChild(title);
+                card.appendChild(linkButton);
+                optionsDiv.appendChild(card);
+            });
+        
+            chatMessages.appendChild(optionsDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, time);
+    }
+
     function addBotMessage(message, time) {
         setTimeout(() => {
             addMessage(message, false);
@@ -191,11 +225,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         resposta = message;
                         resposta = resposta.toLowerCase();
                         softSkills.forEach((skill) => {
-                            console.log(skill.nome.toLowerCase())
                             if(resposta == skill.nome.toLowerCase()){
                                 addBotMessage("Soft Skill Encontrada!", 1000)
+                                console.log(skill.materiais)
                                 skillExiste = true;
-                                //Adicionar os matériais
+                                addImageOptions(skill.materiais, 2000)
                             }
                         })
                         if(!skillExiste){
@@ -381,7 +415,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         buscarPioresSoftSkills(2000)
                         addBotMessage("Gostaria de receber alguns matériais para aprender mais sobre essas Skills?", 4000)
                         addOptions([{text: 'Sim', value: 1}, {text: 'Não', value: 2}], 4500)
-                        //Colocar os materiais aqui
                         break;
                     } else if(resposta == 2){
                         addBotMessage('Certo, estarei te enviando para o menu!', 1000)

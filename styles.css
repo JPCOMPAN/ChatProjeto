@@ -171,7 +171,59 @@ footer {
     padding: 0.8rem;
     text-align: center;
     color: #ecf0f1;
-    font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+    font-size: 0.8rem;
+}
+
+.bot-message-cards {
+    display: flex;
+    gap: 16px;
+}
+
+.bot-card {
+    display: flex;
+    border-radius: 15px;
+    padding: 5px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #3b96d2;
+    transition: transform 0.2s ease;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bot-card:hover {
+    transform: translateY(-4px);
+}
+
+.bot-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.bot-card-title {
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.bot-card-link {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    background-color: #3f73a2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    aspect-ratio: 0;
+}
+
+.bot-card-link:hover {
+    background-color: #2980b9;
 }
 
 @keyframes fadeIn {
