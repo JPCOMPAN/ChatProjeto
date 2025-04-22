@@ -22,9 +22,9 @@ let softSkills = [
     descricao: "Habilidade de se expressar e ouvir com clareza.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/comunicacao",
+        imagem: "https://via.placeholder.com/300x180.png?text=Comunicação"
       }
     ]
   },
@@ -34,9 +34,9 @@ let softSkills = [
     descricao: "Colaboração eficaz com outras pessoas.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/trabalho-em-equipe",
+        imagem: "https://via.placeholder.com/300x180.png?text=Trabalho+em+Equipe"
       }
     ]
   },
@@ -46,9 +46,9 @@ let softSkills = [
     descricao: "Capacidade de lidar com dificuldades e se recuperar.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/resiliencia",
+        imagem: "https://via.placeholder.com/300x180.png?text=Resiliência"
       }
     ]
   },
@@ -58,9 +58,9 @@ let softSkills = [
     descricao: "Capacidade de gerar ideias novas e resolver problemas de forma inovadora.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/criatividade",
+        imagem: "https://via.placeholder.com/300x180.png?text=Criatividade"
       }
     ]
   },
@@ -70,9 +70,9 @@ let softSkills = [
     descricao: "Agir antes que os problemas apareçam, tomar iniciativa.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/proatividade",
+        imagem: "https://via.placeholder.com/300x180.png?text=Proatividade"
       }
     ]
   },
@@ -82,9 +82,9 @@ let softSkills = [
     descricao: "Guiar, inspirar e influenciar positivamente os outros.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/lideranca",
+        imagem: "https://via.placeholder.com/300x180.png?text=Liderança"
       }
     ]
   },
@@ -94,9 +94,9 @@ let softSkills = [
     descricao: "Flexibilidade para lidar com mudanças e novos contextos.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/adaptabilidade",
+        imagem: "https://via.placeholder.com/300x180.png?text=Adaptabilidade"
       }
     ]
   },
@@ -106,9 +106,9 @@ let softSkills = [
     descricao: "Planejamento e controle eficaz do tempo e tarefas.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/organizacao",
+        imagem: "https://via.placeholder.com/300x180.png?text=Organização"
       }
     ]
   },
@@ -118,9 +118,9 @@ let softSkills = [
     descricao: "Reconhecer e gerenciar as próprias emoções e as dos outros.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/inteligencia-emocional",
+        imagem: "https://via.placeholder.com/300x180.png?text=Inteligência+Emocional"
       }
     ]
   },
@@ -130,9 +130,9 @@ let softSkills = [
     descricao: "Capacidade de agir com independência e responsabilidade.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/autonomia",
+        imagem: "https://via.placeholder.com/300x180.png?text=Autonomia"
       }
     ]
   },
@@ -142,9 +142,9 @@ let softSkills = [
     descricao: "Ouvir com atenção e compreensão real do outro.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/escuta-ativa",
+        imagem: "https://via.placeholder.com/300x180.png?text=Escuta+Ativa"
       }
     ]
   },
@@ -154,9 +154,9 @@ let softSkills = [
     descricao: "Habilidade de se relacionar bem com outras pessoas.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/relacionamento-interpessoal",
+        imagem: "https://via.placeholder.com/300x180.png?text=Relacionamento+Interpessoal"
       }
     ]
   },
@@ -166,9 +166,9 @@ let softSkills = [
     descricao: "Reconhecer limitações e valorizar os outros.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/humildade",
+        imagem: "https://via.placeholder.com/300x180.png?text=Humildade"
       }
     ]
   },
@@ -178,9 +178,9 @@ let softSkills = [
     descricao: "Expressar ideias e sentimentos com clareza e respeito.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/assertividade",
+        imagem: "https://via.placeholder.com/300x180.png?text=Assertividade"
       }
     ]
   },
@@ -190,9 +190,9 @@ let softSkills = [
     descricao: "Desejo de aprender e descobrir coisas novas.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/curiosidade",
+        imagem: "https://via.placeholder.com/300x180.png?text=Curiosidade"
       }
     ]
   },
@@ -202,9 +202,9 @@ let softSkills = [
     descricao: "Manter foco e constância para cumprir tarefas e objetivos.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/disciplina",
+        imagem: "https://via.placeholder.com/300x180.png?text=Disciplina"
       }
     ]
   },
@@ -214,9 +214,9 @@ let softSkills = [
     descricao: "Enfrentar desafios e riscos com firmeza.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/coragem",
+        imagem: "https://via.placeholder.com/300x180.png?text=Coragem"
       }
     ]
   },
@@ -226,9 +226,9 @@ let softSkills = [
     descricao: "Concentrar-se no que é importante, evitando distrações.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/foco",
+        imagem: "https://via.placeholder.com/300x180.png?text=Foco"
       }
     ]
   },
@@ -238,9 +238,9 @@ let softSkills = [
     descricao: "Capacidade de refletir e reconhecer os próprios erros.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/autocritica",
+        imagem: "https://via.placeholder.com/300x180.png?text=Autocrítica"
       }
     ]
   },
@@ -250,9 +250,9 @@ let softSkills = [
     descricao: "Buscar evoluir constantemente em tudo que faz.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/melhoria-continua",
+        imagem: "https://via.placeholder.com/300x180.png?text=Melhoria+Contínua"
       }
     ]
   },
@@ -262,9 +262,9 @@ let softSkills = [
     descricao: "Definir metas, estratégias e ações para alcançar objetivos.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/planejamento",
+        imagem: "https://via.placeholder.com/300x180.png?text=Planejamento"
       }
     ]
   },
@@ -274,9 +274,9 @@ let softSkills = [
     descricao: "Atenção à harmonia visual e bom gosto nas apresentações.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/estetica",
+        imagem: "https://via.placeholder.com/300x180.png?text=Estética"
       }
     ]
   },
@@ -286,10 +286,10 @@ let softSkills = [
     descricao: "Responder com criatividade e rapidez a situações inesperadas.",
     materiais: [
       {
-        titulo: "",
-        link: "",
-        imagem: ""
+        titulo: "PlaceHolder",
+        link: "https://exemplo.com/improvisacao",
+        imagem: "https://via.placeholder.com/300x180.png?text=Improvisação"
       }
     ]
   }
-]
+];

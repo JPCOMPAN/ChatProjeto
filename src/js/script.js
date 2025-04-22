@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let falarNome = false;
     let firstMessage = true;
     let realizandoTeste = false;
+    let pioresSkills;
+    let melhoresSkills;
+    let tamanhoSkills;
 
     // Mensagem inicial do bot
     addBotMessage('Olá! Antes de iniciar, digite seu nome abaixo.', 1000);
@@ -49,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, time)
     }
 
-    function addImageOptions(options = [], time) {
+    function addMaterialOptions(options = [], time) {
         setTimeout(() => {
             const optionsDiv = document.createElement('div');
             optionsDiv.classList.add('bot-message-cards');
@@ -122,14 +125,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function calcularPontuacaoSoftSkills(time){
-        let melhoresSkills = softSkills.sort((a, b) => b.pontuacao - a.pontuacao).slice(0, 3)
+        melhoresSkills = softSkills.sort((a, b) => b.pontuacao - a.pontuacao).slice(0, 3)
         setTimeout(() => {
             addBotMessage('🥇 ' + melhoresSkills[0].nome + ' - ' + melhoresSkills[0].descricao + espaco + '🥈 ' + melhoresSkills[1].nome + ' - ' + melhoresSkills[1].descricao + espaco + '🥉 ' + melhoresSkills[2].nome + ' - ' + melhoresSkills[2].descricao) 
         }, time)
     }
 
     function buscarPioresSoftSkills(time){
-        let pioresSkills = softSkills.sort((a, b) => a.pontuacao - b.pontuacao).slice(0, 3)
+        pioresSkills = softSkills.sort((a, b) => a.pontuacao - b.pontuacao).slice(0, 3)
         setTimeout(() => {
             addBotMessage('⚠️ 3. ' + pioresSkills[2].nome + ' - ' + pioresSkills[2].descricao + ' - Pontuação: ' + pioresSkills[2].pontuacao + espaco + '⚠️ 2. ' + pioresSkills[1].nome + ' - ' + pioresSkills[1].descricao + ' - Pontuação: ' + pioresSkills[1].pontuacao + espaco + '⚠️ 1. ' + pioresSkills[0].nome + ' - ' + pioresSkills[0].descricao + ' - Pontuação: ' + pioresSkills[0].pontuacao)
         }, time)
@@ -224,22 +227,28 @@ document.addEventListener('DOMContentLoaded', () => {
                         let skillExiste = false;
                         resposta = message;
                         resposta = resposta.toLowerCase();
+                        disabledChat();
                         softSkills.forEach((skill) => {
-                            if(resposta == skill.nome.toLowerCase()){
-                                addBotMessage("Soft Skill Encontrada!", 1000)
-                                console.log(skill.materiais)
+                            tamanhoSkills = skill.materiais.length;
+                            if (resposta == skill.nome.toLowerCase()) {
+                                addBotMessage("Procurando...", 1000);
+                                console.log(skill.materiais);
                                 skillExiste = true;
-                                addImageOptions(skill.materiais, 2000)
+                                addMaterialOptions(skill.materiais, 3000);
                             }
                         })
                         if(!skillExiste){
                             addBotMessage("Não encontrei nenhuma Soft Skill com esse nome, tente novamente:", 1000)
+                            enableChat(2000);
                             messageCount--
                         }
+                        addBotMessage("Deseja saber mais sobre outra SoftSkill?", 5000)
+                        addOptions([{text: 'Sim', value: 5}, {text: 'Não', value: 6}], 6500)
                         break;
                     }
                 case 4:
                     resposta = messageFromButton?.value || message;
+                    let isPergunta = true;
                     switch(resposta){
                         case 1:
                             pontuarSoftSkill("Empatia", 2);
@@ -265,16 +274,30 @@ document.addEventListener('DOMContentLoaded', () => {
                             pontuarSoftSkill("Comunicação", 1);
                             pontuarSoftSkill("Trabalho em equipe", 1);
                             break;
+                        case 5:
+                            isPergunta = false;
+                            addBotMessage("Insira a SoftSkill que deseja procurar:", 1000);
+                            messageCount = 2;
+                            enableChat();
+                            break;
+                        case 6:
+                            isPergunta = false;
+                            addBotMessage("Certo, estarei te mandando de volta para o nosso menu! :)", 1000);
+                            messageCount = 1;
+                            menu(4000);
+                            break;
                     }
-                    addBotMessage('Calculando...', 1000);
-                    addBotMessage('Certo, vamos para a próxima pergunta!', 3000);
-                    addBotMessage('Você recebe uma tarefa nova que nunca fez antes. O que faz?', 5000);
-                    addOptions([
-                        { text: 'Pesquiso por conta própria e tento resolver sozinho.', value: 1 },
-                        { text: 'Peço ajuda para alguém mais experiente e tento aprender com ele.', value: 2 },
-                        { text: 'Fico nervoso, mas tento fazer do meu jeito mesmo assim.', value: 3 },
-                        { text: 'Organizo um plano e defino o que preciso aprender antes de começar.', value: 4 }
-                    ], 6000);
+                    if(isPergunta){
+                        addBotMessage('Calculando...', 1000);
+                        addBotMessage('Certo, vamos para a próxima pergunta!', 3000);
+                        addBotMessage('Você recebe uma tarefa nova que nunca fez antes. O que faz?', 5000);
+                        addOptions([
+                            { text: 'Pesquiso por conta própria e tento resolver sozinho.', value: 1 },
+                            { text: 'Peço ajuda para alguém mais experiente e tento aprender com ele.', value: 2 },
+                            { text: 'Fico nervoso, mas tento fazer do meu jeito mesmo assim.', value: 3 },
+                            { text: 'Organizo um plano e defino o que preciso aprender antes de começar.', value: 4 }
+                        ], 6000);
+                    }
                     break;
                 case 5:
                     resposta = messageFromButton?.value || message;
@@ -399,7 +422,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             pontuarSoftSkill("Melhoria contínua", -2);
                             break;
                     }
-                    console.log(softSkills)
                     addBotMessage('Muito bem! Terminamos o questionário.', 1000);
                     addBotMessage('Agora vou calcular quais são suas principais soft skills...', 2000);
                     addBotMessage('Parabéns! Aqui está suas melhores Soft Skills:', 5000)
@@ -426,7 +448,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 10:
                     resposta = messageFromButton?.value || message 
                     if(resposta == 1){
-                        //Colocar os matériais aqui
+                        addBotMessage('Estou te mandando alguns matériais referente a essas SoftSkills.', 1000)
+                        addBotMessage('Um momento...', 2000)
+                        const materiais = pioresSkills;
+                        let materialAleatorio = [];
+                        console.log(materiais)
+                        pioresSkills.forEach((skill) => {
+                            const materiaisDaSkill = skill.materiais; // Acessa o array de materiais da skill
+                            const materialAleatorioSkill = materiaisDaSkill[Math.floor(Math.random() * materiaisDaSkill.length)];
+                            materialAleatorio.push(materialAleatorioSkill); // Adiciona ao array de materiais aleatórios
+                        });
+                        console.log(materialAleatorio)
+                        addMaterialOptions(materialAleatorio, 5000);
+                        addBotMessage('Aqui estão alguns matériais, fico feliz em ajudar! :)', 7000)
+                        addBotMessage('Estou te levando para o menu principal agora.', 10000);
+                        addBotMessage('Muito obrigado por utilizar nosso Quiz! :)', 11000)
+                        messageCount = 1;
+                        menu(13000);
                         break;
                     } else if(resposta == 2){
                         addBotMessage('Certo, estarei te enviando para o menu!', 1000)
