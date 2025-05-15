@@ -17,9 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let tamanhoSkills;
 
     // Mensagem inicial do bot
-    addBotMessage('Olá! Antes de iniciar, digite seu nome abaixo.', 1000);
-    addBotMessage('Não precisa ter medo, não utilizamos nenhum dado sensível para outros fins.', 2000);
-    enableChat(2250);
+    addBotMessage('Olá meu nome é SkiBo!', 1000)
+    addBotMessage(' Antes de iniciar, digite seu nome abaixo.', 2000);
+    addBotMessage('Não precisa ter medo, não utilizamos nenhum dado sensível para outros fins.', 3000);
+    enableChat(3250);
     firstMessage = true;
     
     function addMessage(message, isUser) {
