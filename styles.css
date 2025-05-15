@@ -27,9 +27,12 @@ header {
 .logo-placeholder {
     min-width: 40px;
     height: 40px;
-    background-color: #3498db;
-    border-radius: 8px;
 }
+
+    .logo-placeholder img {
+        width: 6.5em;
+        
+    }
 
 header h1 {
     color: white;
