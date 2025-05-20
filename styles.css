@@ -29,10 +29,9 @@ header {
     height: 40px;
 }
 
-    .logo-placeholder img {
-        width: 6.5em;
-        
-    }
+.logo-placeholder img {
+    width: 6.5em;
+}
 
 header h1 {
     color: white;

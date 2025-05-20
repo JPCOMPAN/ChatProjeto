@@ -4,8 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const sendBtn = document.getElementById('send-btn');
     const espaco = "<br>"
     disabledChat();
+    carregarSoftSkills();
 
     //Dados do usuário e variaveis de controle
+    let softSkills = []
     let userNome;
     let messageCount = 0;
     let opcaoAjuda;
@@ -22,6 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
     addBotMessage('Não precisa ter medo, não utilizamos nenhum dado sensível para outros fins.', 3000);
     enableChat(3250);
     firstMessage = true;
+
+    async function carregarSoftSkills() {
+        try {
+            const resposta = await fetch('src/softskills.json');
+            const dados = await resposta.json();
+            softSkills = dados;
+        } catch (erro) {
+            console.error('Erro ao carregar JSON:', erro);
+        }
+    }
     
     function addMessage(message, isUser) {
         const messageDiv = document.createElement('div');
@@ -87,11 +99,34 @@ document.addEventListener('DOMContentLoaded', () => {
         }, time);
     }
 
+    function addVideo(videoUrl, time) {
+        setTimeout(() => {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message');
+            messageDiv.classList.add('bot-message');
+
+            const embedUrl = videoUrl.replace("watch?v=", "embed/").replace("youtu.be/", "www.youtube.com/embed/");
+
+            const iframe = document.createElement('iframe');
+            iframe.width = '600';
+            iframe.height = '360';
+            iframe.src = embedUrl;
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+            iframe.allowFullscreen = true;
+            iframe.frameBorder = 0;
+
+            messageDiv.appendChild(iframe);
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, time)
+    }
+
     function addBotMessage(message, time) {
         setTimeout(() => {
             addMessage(message, false);
         }, time);
     }
+    
 
     function addUserMessage(message) {
         addMessage(message, true);
@@ -169,9 +204,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     userNome = message;
                     if(!falarNome){
                         addBotMessage(`Olá ${userNome}, tudo bem?`, 1000);
+                        addBotMessage('Antes de começar, recomendo assistir ao nosso vídeo de introdução! :)', 3000)
+                        addVideo('https://www.youtube.com/watch?v=Hta6isiec6E', 4000)
                         falarNome = true;
                     }
-                    menu(2000);
+                    menu(6000);
                     disabledChat();
                 break;
                 case 2:
@@ -179,11 +216,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     if(opcao == 1){
                         opcaoAjuda = 1;
                         addBotMessage('Ah! Então você quer saber o que são SoftSkills né?', 1000)
-                        addBotMessage('Soft Skills são habilidades comportamentais, tipo como você se comunica, resolve problemas, lida com pressão ou trabalha em equipe.', 2000);
-                        addBotMessage('Elas não têm a ver com o que você sabe tecnicamente, mas com a forma como você age, pensa e se relaciona com os outros.', 4000);
-                        addBotMessage('Exemplos de Soft Skills: empatia, liderança, organização, criatividade, resiliência, entre outras.', 6000);
-                        addBotMessage('Elas são super valorizadas no mercado, porque mostram como você colabora, aprende e evolui com os desafios do dia a dia.', 8000);
-                        addBotMessage('Agora que você já sabe, bora descobrir quais são suas principais Soft Skills? 😎', 10000);
+                        addBotMessage('Soft Skills são habilidades comportamentais, tipo como você se comunica, resolve problemas, lida com pressão ou trabalha em equipe.', 3000);
+                        addBotMessage('Elas não têm a ver com o que você sabe tecnicamente, mas com a forma como você age, pensa e se relaciona com os outros.', 5000);
+                        addBotMessage('Exemplos de Soft Skills: empatia, liderança, organização, criatividade, resiliência, entre outras.', 7000);
+                        addBotMessage('Elas são super valorizadas no mercado, porque mostram como você colabora, aprende e evolui com os desafios do dia a dia.', 9000);
+                        addBotMessage('Agora que você já sabe, bora descobrir quais são suas principais Soft Skills? 😎', 11000);
                         addOptions([{text: 'Sim', value: 1}, {text: 'Não', value: 2}], 11500)
                         break;
                     }
