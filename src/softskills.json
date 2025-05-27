@@ -13,6 +13,11 @@
         "titulo": "Empatia - Conceito, exemplos e o que é assertividade",
         "link": "https://conceitosdomundo.pt/empatia/",
         "imagem": "https://conceitosdomundo.pt/wp-content/uploads/2021/10/empatia.jpg"
+      },
+      {
+        "titulo": "O que é EMPATIA",
+        "link": "https://m.youtube.com/watch?v=Y7vTAMgGF1g",
+        "imagem": "https://img.youtube.com/vi/Y7vTAMgGF1g/maxresdefault.jpg"
       }
     ]
   },
@@ -22,9 +27,19 @@
     "descricao": "Habilidade de se expressar e ouvir com clareza.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/comunicacao",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Comunicação"
+        "titulo": "Como desenvolver a habilidade de comunicação? Aprimore-se!",
+        "link": "https://blog.peixe30.com/como-desenvolver-habilidade-comunicacao/",
+        "imagem": "https://blog.peixe30.com/wp-content/uploads/2023/08/comunicacao.jpg"
+      },
+      {
+        "titulo": "5 maneiras de melhorar sua comunicação interpessoal",
+        "link": "https://exame.com/carreira/guia-de-carreira/5-maneiras-de-melhorar-sua-comunicacao-interpessoal/",
+        "imagem": "https://exame.com/wp-content/uploads/2024/12/comunicacao-interpessoal.jpg"
+      },
+      {
+        "titulo": "5 Atitudes para Melhorar sua Comunicação Interpessoal",
+        "link": "https://youtu.be/Bl_6HTExtlA?si=4pemorL0l4RNcqm2",
+        "imagem": "https://img.youtube.com/vi/Bl_6HTExtlA/maxresdefault.jpg"
       }
     ]
   },
@@ -34,9 +49,19 @@
     "descricao": "Colaboração eficaz com outras pessoas.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/trabalho-em-equipe",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Trabalho+em+Equipe"
+        "titulo": "Colaboração e trabalho em equipe: como desenvolver",
+        "link": "https://www.metadados.com.br/blog/soft-skills",
+        "imagem": "https://www.metadados.com.br/wp-content/uploads/2023/07/colaboracao-trabalho-equipe.jpg"
+      },
+      {
+        "titulo": "Soft skills: o que são e como desenvolver na equipe?",
+        "link": "https://gptw.com.br/conteudo/artigos/soft-skills/",
+        "imagem": "https://gptw.com.br/wp-content/uploads/2023/09/soft-skills-equipe.jpg"
+      },
+      {
+        "titulo": "Soft Skills: TRABALHO EM EQUIPE.",
+        "link": "https://youtu.be/aHO02M6aG4U?si=0sPxUu7aOhcaIXS6",
+        "imagem": "https://img.youtube.com/vi/aHO02M6aG4U/maxresdefault.jpg"
       }
     ]
   },
@@ -46,9 +71,19 @@
     "descricao": "Capacidade de lidar com dificuldades e se recuperar.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/resiliencia",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Resiliência"
+        "titulo": "Resiliência: como desenvolver essa soft skill e se destacar",
+        "link": "https://www.tenda.com/blog/jeitotendadeser/como-desenvolver-resiliencia",
+        "imagem": "https://www.tenda.com/blog/wp-content/uploads/2022/05/resiliencia.jpg"
+      },
+      {
+        "titulo": "Resiliência no trabalho: o que é e como desenvolver em 7 passos",
+        "link": "https://solides.com.br/blog/resiliencia-no-trabalho/",
+        "imagem": "https://solides.com.br/wp-content/uploads/2023/06/resiliencia-trabalho.jpg"
+      },
+      {
+        "titulo": "Como desenvolver a RESILIÊNCIA",
+        "link": "https://youtu.be/6MCZhFp9Yng?si=uVyNhGCQjeIao3Z2",
+        "imagem": "https://img.youtube.com/vi/6MCZhFp9Yng/maxresdefault.jpg"
       }
     ]
   },
@@ -58,9 +93,19 @@
     "descricao": "Capacidade de gerar ideias novas e resolver problemas de forma inovadora.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/criatividade",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Criatividade"
+        "titulo": "Como desenvolver a criatividade: 7 maneiras de estimular o pensamento criativo",
+        "link": "https://ebaconline.com.br/blog/como-desenvolver-a-criatividade",
+        "imagem": "https://ebaconline.com.br/blog/wp-content/uploads/2022/03/criatividade.jpg"
+      },
+      {
+        "titulo": "Criatividade: Como pensar fora da caixinha em sua área de atuação?",
+        "link": "https://www.ciadetalentos.com.br/blog/criatividade-como-pensar-fora-da-caixinha-em-sua-area-de-atuacao/",
+        "imagem": "https://www.ciadetalentos.com.br/blog/wp-content/uploads/2022/08/pensar-fora-da-caixinha.jpg"
+      },
+      {
+        "titulo": "Como desenvolver a Criatividade",
+        "link": "https://www.youtube.com/watch?v=TwKoCey-TQg",
+        "imagem": "https://img.youtube.com/vi/TwKoCey-TQg/maxresdefault.jpg"
       }
     ]
   },
@@ -70,9 +115,19 @@
     "descricao": "Agir antes que os problemas apareçam, tomar iniciativa.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/proatividade",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Proatividade"
+        "titulo": "Proatividade: uma soft skill essencial",
+        "link": "https://medium.com/@fernanda_esma/proatividade-uma-soft-skill-essencial-6f80ff237ae4",
+        "imagem": "https://miro.medium.com/v2/resize:fit:1200/1*proatividade.jpg"
+      },
+      {
+        "titulo": "Proatividade no trabalho: veja 6 dicas para desenvolver",
+        "link": "https://etalent.com.br/artigos/treinamento-e-desenvolvimento/proatividade/",
+        "imagem": "https://etalent.com.br/wp-content/uploads/2022/07/proatividade-trabalho.jpg"
+      },
+      {
+        "titulo": "PROATIVIDADE (8 Dicas Simples Para Crescer e Se Destacar No Trabalho)",
+        "link": "https://youtu.be/n_Xx7BoCDO0?si=xHN7GyUJs8Y8Nk3T",
+        "imagem": "https://img.youtube.com/vi/n_Xx7BoCDO0/maxresdefault.jpg"
       }
     ]
   },
@@ -82,9 +137,19 @@
     "descricao": "Guiar, inspirar e influenciar positivamente os outros.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/lideranca",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Liderança"
+        "titulo": "Liderança e soft skills: como desenvolver habilidades e competências",
+        "link": "https://vanzolini.org.br/blog/lideranca-e-soft-skills-como-desenvolver-habilidades-e-competencias/",
+        "imagem": "https://vanzolini.org.br/blog/wp-content/uploads/2023/10/lideranca-soft-skills.jpg"
+      },
+      {
+        "titulo": "Quais soft skills a primeira liderança deve desenvolver?",
+        "link": "https://escoladocaos.com/soft-skills-lideranca-deve-desenvolver/",
+        "imagem": "https://escoladocaos.com/wp-content/uploads/2022/09/soft-skills-lideranca.jpg"
+      },
+      {
+        "titulo": "As 7 Soft Skills mais valorizadas em um líder ou gestor nas empresas",
+        "link": "https://www.youtube.com/watch?v=x1G9iBZquAs",
+        "imagem": "https://img.youtube.com/vi/x1G9iBZquAs/maxresdefault.jpg"
       }
     ]
   },
@@ -94,9 +159,19 @@
     "descricao": "Flexibilidade para lidar com mudanças e novos contextos.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/adaptabilidade",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Adaptabilidade"
+        "titulo": "A importância da adaptabilidade no mercado de trabalho",
+        "link": "https://asana.com/pt/resources/workplace-adaptability-skills",
+        "imagem": "https://tse3.mm.bing.net/th/id/OIP.OwJJivHvBlVNSf4ATozynQHaER?cb=iwc2&rs=1&pid=ImgDetMain"
+      },
+      {
+        "titulo": "Como desenvolver a adaptabilidade na carreira",
+        "link": "https://www.vagas.com.br/profissoes/adaptabilidade",
+        "imagem": "https://profissoes.vagas.com.br/wp-content/uploads/2023/10/iStock-1480279814-1.jpg"
+      },
+      {
+        "titulo": "Adaptabilidade, inovação e habilidades do profissional do futuro",
+        "link": "https://www.youtube.com/watch?v=_P0n9rx7jtE",
+        "imagem": "https://img.youtube.com/vi/_P0n9rx7jtE/maxresdefault.jpg"
       }
     ]
   },
@@ -106,9 +181,19 @@
     "descricao": "Planejamento e controle eficaz do tempo e tarefas.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/organizacao",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Organização"
+        "titulo": "Como ser uma pessoa organizada: dicas práticas",
+        "link": "https://www.serasaexperian.com.br/carreiras/blog-carreiras/organizacao-no-trabalho/",
+        "imagem": "https://www.serasaexperian.com.br/images-cms/wp-content/uploads/2023/06/Organizacao-no-trabalho.jpg.webp"
+      },
+      {
+        "titulo": "10 passos para melhorar sua organização pessoal",
+        "link": "https://blog.trello.com/organizacao-pessoal",
+        "imagem": "https://atlassianblog.wpengine.com/wp-content/uploads/2025/01/color-2-how-to-be-a-more-connected-leader-1184x646.jpg"
+      },
+      {
+        "titulo": "Organização Pessoal (Soft Skill Essencial)",
+        "link": "https://www.youtube.com/watch?v=0J11Ll3O75g",
+        "imagem": "https://img.youtube.com/vi/0J11Ll3O75g/maxresdefault.jpg"
       }
     ]
   },
@@ -118,9 +203,19 @@
     "descricao": "Reconhecer e gerenciar as próprias emoções e as dos outros.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/inteligencia-emocional",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Inteligência+Emocional"
+        "titulo": "Importância da inteligência emocional no trabalho",
+        "link": "https://unifor.br/web/melhor-profissao/a-importancia-da-inteligencia-emocional-no-mercado-de-trabalho",
+        "imagem": "https://unifor.br/documents/3649201/3649203/inteligencia-emocional-1500px-getty-images.jpg/e3c27b4e-5490-383d-fd87-739b2d198bfb?version=1.0&t=1714502940988"
+      },
+      {
+        "titulo": "Inteligência Emocional : como desenvolver?",
+        "link": "https://www.youtube.com/watch?v=B9a9Ln4uHlw",
+        "imagem": "https://img.youtube.com/vi/B9a9Ln4uHlw/maxresdefault.jpg"
+      },
+      {
+        "titulo": "Inteligência Emocional: Como Desenvolver e Aplicar essa Habilidade Essencial em sua Vida",
+        "link": "https://www.fumec.br/inteligencia-emocional-como-desenvolver-e-aplicar-essa-habilidade-essencial-em-sua-vida/",
+        "imagem": "https://www.fumec.br/wp-content/uploads/2024/11/fundointeligencia-emocional-copiar.png"
       }
     ]
   },
@@ -130,9 +225,19 @@
     "descricao": "Capacidade de agir com independência e responsabilidade.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/autonomia",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Autonomia"
+        "titulo": "Autonomia no trabalho: importância e como desenvolver no time",
+        "link": "https://www.qulture.rocks/blog/autonomia-no-trabalho",
+        "imagem": "https://cdn.prod.website-files.com/624502ee9eae951d5b9c2be7/645ead9b6e785b8942c029fb_autonomia-no-trabalho.jpg"
+      },
+      {
+        "titulo": "O que é preciso para conquistar a autonomia profissional?",
+        "link": "https://www.youtube.com/watch?v=CJfTWU8UNC4",
+        "imagem": "https://img.youtube.com/vi/CJfTWU8UNC4/maxresdefault.jpg"
+      },
+      {
+        "titulo": "Autonomia no trabalho: quais os benefícios e como incentivar?",
+        "link": "https://www.amcham.com.br/blog/autonomia-no-trabalho",
+        "imagem": "https://887b427e236efdf62a3f56a1e77cf08a.cdn.bubble.io/cdn-cgi/image/w=768,h=432,f=auto,dpr=1.75,fit=contain,q=100/f1707326696267x176234641425728100/amcham_amcham_image_555.jpeg"
       }
     ]
   },
@@ -142,9 +247,19 @@
     "descricao": "Ouvir com atenção e compreensão real do outro.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/escuta-ativa",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Escuta+Ativa"
+        "titulo": "Benefícios da escuta ativa no ambiente de trabalho.",
+        "link": "https://www.metadados.com.br/blog/escuta-ativa",
+        "imagem": "https://metadados-website-cdn.azureedge.net/strapi-uploads/assets/escuta_ativa_banner_65ac1a58e8.webp"
+      },
+      {
+        "titulo": "Aprendendo a escutar | Como desenvolver a escuta ativa",
+        "link": "https://www.youtube.com/watch?v=phjrxrHqVS4",
+        "imagem": "https://img.youtube.com/vi/phjrxrHqVS4/maxresdefault.jpg"
+      },
+      {
+        "titulo": "8 dicas de como desenvolver a escuta ativa em sua empresa",
+        "link": "https://gptw.com.br/conteudo/artigos/escuta-ativa/",
+        "imagem": "https://gptw.com.br/wp-content/uploads/2021/10/lider-e-colaboradora-conversando-sobre-demandas.jpg"
       }
     ]
   },
@@ -154,9 +269,19 @@
     "descricao": "Habilidade de se relacionar bem com outras pessoas.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/relacionamento-interpessoal",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Relacionamento+Interpessoal"
+        "titulo": "Bom relacionamentos interpessoais no trabalho: o que é e dicas para desenvolvê-los",
+        "link": "https://ebaconline.com.br/blog/relacionamento-interpessoal-no-trabalho",
+        "imagem": "https://blog.ebaconline.com.br/blog/wp-content/uploads/2024/11/18-relacionamento-interpessoal-no-trabalho-o-que-e-os-tipos-qual-a-importancia-como-melhorar.jpg"
+      },
+      {
+        "titulo": "Relações Interpessoais no Trabalho",
+        "link": "https://www.youtube.com/watch?v=CBYCdPo5e-A",
+        "imagem": "https://img.youtube.com/vi/CBYCdPo5e-A/maxresdefault.jpg"
+      },
+      {
+        "titulo": "Relações interpessoais no trabalho: saiba mais neste post!",
+        "link": "https://www.unicesumar.edu.br/blog/relacoes-interpessoais-no-trabalho/",
+        "imagem": "https://www.unicesumar.edu.br/blog/wp-content/uploads/2022/07/post_thumbnail-1a6acc827209bae09e8360bd61bfd8d1-1536x1024.jpeg"
       }
     ]
   },
@@ -166,9 +291,19 @@
     "descricao": "Reconhecer limitações e valorizar os outros.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/humildade",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Humildade"
+        "titulo": "Por que a humildade é tão poderosa em nosso trabalho?",
+        "link": "https://www.volarisgroup.com/pt-br/acquired-knowledge/por-que-a-humildade-e-tao-poderosa-em-nosso-trabalho/",
+        "imagem": "https://www.volarisgroup.com/wp-content/uploads/2024/12/Humility-banner.jpg"
+      },
+      {
+        "titulo": "O QUE É E COMO CULTIVAR A HUMILDADE | CANAL DO COACHING",
+        "link": "https://www.youtube.com/watch?v=xYoCUb1EFgw",
+        "imagem": "https://img.youtube.com/vi/xYoCUb1EFgw/maxresdefault.jpg"
+      },
+      {
+        "titulo": "Como a Humildade Impulsiona a Colaboração no Trabalho",
+        "link": "https://culturise.ai/como-a-humildade-impulsiona-a-colaboracao-no-trabalho/",
+        "imagem": "https://culturise.ai/wp-content/uploads/2024/09/Humildade.jpg"
       }
     ]
   },
@@ -178,9 +313,19 @@
     "descricao": "Expressar ideias e sentimentos com clareza e respeito.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/assertividade",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Assertividade"
+        "titulo": "A importância da Assertividade no ambiente de trabalho",
+        "link": "https://www.busup.com/pt-br/blog/assertividade-no-trabalho",
+        "imagem": "https://www.busup.com/hubfs/Imported_Blog_Media/iStock-903715608.jpg"
+      },
+      {
+        "titulo": "ASSERTIVIDADE no ambiente de TRABALHO",
+        "link": "https://www.youtube.com/watch?v=DGbWQLJrss8",
+        "imagem": "https://img.youtube.com/vi/DGbWQLJrss8/maxresdefault.jpg"
+      },
+      {
+        "titulo": "ARTIGO – O que é comunicação assertiva e como melhorar no trabalho?",
+        "link": "https://www.portaldorh.ms.gov.br/artigo-o-que-e-comunicacao-assertiva-e-como-melhorar-no-trabalho/",
+        "imagem": "https://www.portaldorh.ms.gov.br/wp-content/uploads/2024/07/Comunicacao-03.png"
       }
     ]
   },
@@ -190,9 +335,19 @@
     "descricao": "Desejo de aprender e descobrir coisas novas.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/curiosidade",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Curiosidade"
+        "titulo": "Como e por que desenvolver a curiosidade no trabalho?",
+        "link": "https://blog.portalpos.com.br/a-importancia-da-curiosidade/",
+        "imagem": "https://blog.portalpos.com.br/wp-content/uploads/2022/04/curiosidade.jpg"
+      },
+      {
+        "titulo": "A Importância da Curiosidade para o Desenvolvimento Contínuo",
+        "link": "https://www.youtube.com/watch?v=MgVmv7ndHE0",
+        "imagem": "https://img.youtube.com/vi/MgVmv7ndHE0/maxresdefault.jpg"
+      },
+      {
+        "titulo": "Curiosidade no ambiente de trabalho: por que ela favorece os negócios e como promovê-la em sua empresa",
+        "link": "https://www.crossknowledge.com/pt/blog/curiosidade-no-ambiente-de-trabalho-por-que-ela-favorece-os-negocios-e-como-promove-la-em-sua-empresa/",
+        "imagem": "https://www.crossknowledge.com/wp-content/uploads/cache/2022/09/curiosity-in-the-workplace/902242961.jpg"
       }
     ]
   },
@@ -202,9 +357,19 @@
     "descricao": "Manter foco e constância para cumprir tarefas e objetivos.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/disciplina",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Disciplina"
+        "titulo": "Disciplina profissional: saiba por que é importante desenvolvê-la",
+        "link": "https://digital.unesc.net/blog/disciplina-profissional",
+        "imagem": "https://digital.unesc.net/hs-fs/hubfs/Canva%20images/Design%20sem%20nome-Jul-19-2022-05-51-04-31-PM.png?width=1412&height=792&name=Design%20sem%20nome-Jul-19-2022-05-51-04-31-PM.png"
+      },
+      {
+        "titulo": "Disciplina é a chave do sucesso",
+        "link": "https://www.youtube.com/watch?v=L1Z288wY3uU",
+        "imagem": "https://img.youtube.com/vi/L1Z288wY3uU/maxresdefault.jpg"
+      },
+      {
+        "titulo": "Disciplina profissional: o que significa e como desenvolvê-la?",
+        "link": "https://blog.portalpos.com.br/disciplina-profissional/",
+        "imagem": "https://blog.portalpos.com.br/wp-content/uploads/2022/05/disciplina-profissional.jpg"
       }
     ]
   },
@@ -214,9 +379,19 @@
     "descricao": "Enfrentar desafios e riscos com firmeza.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/coragem",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Coragem"
+        "titulo": "Coragem no local de trabalho.",
+        "link": "https://www.roffeypark.com/articles/courage-in-the-workplace/",
+        "imagem": "https://www.roffeypark.com/wp-content/uploads/2024/02/being-courageous-at-work.jpg"
+      },
+      {
+        "titulo": "COMO DESENVOLVER A CORAGEM",
+        "link": "https://m.youtube.com/watch?v=p7pKFpN2PCo",
+        "imagem": "https://img.youtube.com/vi/p7pKFpN2PCo/maxresdefault.jpg"
+      },
+      {
+        "titulo": "Por que a coragem muda o jogo",
+        "link": "https://revistahsm.com.br/por-que-a-coragem-muda-o-jogo/",
+        "imagem": "https://revistahsm.com.br/wp-content/uploads/2024/09/Imagens_Prancheta_1_c__pia_48.png"
       }
     ]
   },
@@ -226,9 +401,19 @@
     "descricao": "Concentrar-se no que é importante, evitando distrações.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/foco",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Foco"
+        "titulo": "10 dicas para manter o foco e ser mais eficiente no trabalho.",
+        "link": "https://www.qntrl.com/pt-br/blog/manter-foco-no-trabalho.html",
+        "imagem": "https://odblogs.zohowebstatic.com/sites/qntrl-blog/files/qntrl-blog/pt-br/1.jpg"
+      },
+      {
+        "titulo": "7 EXERCÍCIOS PARA MELHORAR O FOCO NO TRABALHO E NOS ESTUDOS!",
+        "link": "https://m.youtube.com/watch?v=8h81u6cUcZc",
+        "imagem": "https://img.youtube.com/vi/8h81u6cUcZc/maxresdefault.jpg"
+      },
+      {
+        "titulo": "Como ter foco e ser mais produtivo - Sebrae",
+        "link": "https://sebrae.com.br/sites/PortalSebrae/artigos/como-ter-foco-e-ser-mais-produtivo,2bcd62358cde4810VgnVCM100000d701210aRCRD",
+        "imagem": "https://sebrae.com.br/Sebrae/Portal%20Sebrae/Artigos/Imagens/imagem_empreendorismo_como-ter-foco-e-ser-mais-produtivo_shutterstock_1911471964.jpg"
       }
     ]
   },
@@ -238,9 +423,19 @@
     "descricao": "Capacidade de refletir e reconhecer os próprios erros.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/autocritica",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Autocrítica"
+        "titulo": "Autocrítica: o que é, por que importa e como melhorar?",
+        "link": "https://napratica.org.br/autocritica/",
+        "imagem": "https://napratica.org.br/wp-content/uploads/2023/05/foto-por-Mohammad-Danish-via-Pexels.jpg"
+      },
+      {
+        "titulo": "VOCÊ É MUITO AUTOCRÍTICO(A)? SIGA ESSAS DICAS CIENTÍFICAS QUE PODEM AJUDAR",
+        "link": "https://www.youtube.com/watch?v=0uUCIghAm38",
+        "imagem": "https://img.youtube.com/vi/0uUCIghAm38/maxresdefault.jpg"
+      },
+      {
+        "titulo": "Autocrítica: o que é e como ela pode impulsionar sua carreira",
+        "link": "https://penser.com.br/autocritica/",
+        "imagem": "https://penser.com.br/wp-content/webp-express/webp-images/uploads/2019/07/autocritica.png.webp"
       }
     ]
   },
@@ -250,9 +445,19 @@
     "descricao": "Buscar evoluir constantemente em tudo que faz.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/melhoria-continua",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Melhoria+Contínua"
+        "titulo": "Melhoria Contínua: o que é, qual o objetivo e os 3 pilares.",
+        "link": "https://blog.aevo.com.br/melhoria-continua/",
+        "imagem": "https://blog.aevo.com.br/wp-content/uploads/2020/10/melhoria-continua-2.jpg.webp"
+      },
+      {
+        "titulo": "Método Kaizen: O Hábito da Melhoria Contínua",
+        "link": "https://m.youtube.com/watch?v=SN1wWKEYNK8",
+        "imagem": "https://img.youtube.com/vi/SN1wWKEYNK8/maxresdefault.jpg"
+      },
+      {
+        "titulo": "O que é melhoria contínua: ferramentas e metodologias",
+        "link": "https://www.atlassian.com/br/agile/project-management/continuous-improvement",
+        "imagem": "https://foccoerp.com.br/wp-content/uploads/2023/11/melhoria-continua.jpg"
       }
     ]
   },
@@ -262,9 +467,19 @@
     "descricao": "Definir metas, estratégias e ações para alcançar objetivos.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/planejamento",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Planejamento"
+        "titulo": "A importância do planejamento do dia de trabalho: por que planejar?",
+        "link": "https://www.unimedserragaucha.com.br/blog/a-importancia-do-planejamento-do-dia-de-trabalho-por-que-planejar",
+        "imagem": "https://www.unimedserragaucha.com.br/media/15738/linda-jovem-morena-olhando-suas-anotacoes-no-caderno-enquanto-trabalha-em-um-novo-projeto-ou-pensa-em-ideias.jpg"
+      },
+      {
+        "titulo": "Planejamento Pessoal e Profissional Para Iniciar 2025 da Melhor Forma",
+        "link": "https://m.youtube.com/watch?v=zSK72M8srxg",
+        "imagem": "https://img.youtube.com/vi/zSK72M8srxg/maxresdefault.jpg"
+      },
+      {
+        "titulo": "Planejamento para o Crescimento Pessoal e Profissional",
+        "link": "https://www.gescontreinamentos.com.br/planejamento-para-o-crescimento-pessoal-e-profissional/",
+        "imagem": "https://i0.wp.com/www.gescontreinamentos.com.br/wp-content/uploads/2024/10/106.jpg?w=1200&ssl=1"
       }
     ]
   },
@@ -274,9 +489,19 @@
     "descricao": "Atenção à harmonia visual e bom gosto nas apresentações.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/estetica",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Estética"
+        "titulo": "A IMPORTÂNCIA DE CUIDAR DA IMAGEM PESSOAL NO AMBIENTE DE TRABALHO.",
+        "link": "https://www.ibccoaching.com.br/portal/comportamento/importancia-cuidar-imagem-pessoal-ambiente-trabalho/",
+        "imagem": "https://s3.amazonaws.com/ibc-portal/wp-content/uploads/2013/01/22112033/imagem-profissional.jpg"
+      },
+      {
+        "titulo": "IMAGEM PESSOAL: 5 dicas para desenvolver a sua",
+        "link": "https://www.youtube.com/watch?v=YfgNtgkyW8M",
+        "imagem": "https://img.youtube.com/vi/YfgNtgkyW8M/maxresdefault.jpg"
+      },
+      {
+        "titulo": "Imagem Pessoal: saiba o que é e entende a importância para sua carreira",
+        "link": "https://www.tecnicageracao.com.br/blog/imagem-pessoal-saiba-o-que-e-e-entende-a-importancia-para-sua-carreira/",
+        "imagem": "https://www.tecnicageracao.com.br/wp-content/uploads/2023/07/Post-de-blog-Imagem-Pessoal-768x404.jpg.webp"
       }
     ]
   },
@@ -286,9 +511,19 @@
     "descricao": "Responder com criatividade e rapidez a situações inesperadas.",
     "materiais": [
       {
-        "titulo": "PlaceHolder",
-        "link": "https://exemplo.com/improvisacao",
-        "imagem": "https://via.placeholder.com/300x180.png?text=Improvisação"
+        "titulo": "A Improvisação Como Ferramenta De Trabalho",
+        "link": "https://www.blog.rhbot.com.br/a-improvisacao-como-ferramenta-de-trabalho/",
+        "imagem": "https://www.blog.rhbot.com.br/wp-content/uploads/2019/06/34.jpg"
+      },
+      {
+        "titulo": "O improviso nas empresas | Marcio Ballas",
+        "link": "https://www.youtube.com/watch?v=H4ngLXe6lls",
+        "imagem": "https://img.youtube.com/vi/H4ngLXe6lls/maxresdefault.jpg"
+      },
+      {
+        "titulo": "A regra e a improvisação: dinâmica criativa entre músicos",
+        "link": "https://www.scielo.br/j/ccedes/a/gTK3JHX7DxYr6bZBwCyzPvG/",
+        "imagem": "https://tse1.mm.bing.net/th/id/OIP.FxYqd2eYytOleCvpoJPVRAHaE8?cb=iwc2&rs=1&pid=ImgDetMain"
       }
     ]
   }

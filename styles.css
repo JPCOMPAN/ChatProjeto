@@ -156,7 +156,6 @@ button:hover {
     width: clamp(120px, 12vw, 180px);
     height: clamp(120px, 12vw, 180px);
     border-radius: 15px;
-    background-color: white;
     overflow: hidden;
 }
 

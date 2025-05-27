@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if(!falarNome){
                         addBotMessage(`Olá ${userNome}, tudo bem?`, 1000);
                         addBotMessage('Antes de começar, recomendo assistir ao nosso vídeo de introdução! :)', 3000)
-                        addVideo('https://www.youtube.com/watch?v=Hta6isiec6E', 4000)
+                        addVideo('https://youtu.be/QNAzo37gcbc', 4000)
                         falarNome = true;
                     }
                     menu(6000);
