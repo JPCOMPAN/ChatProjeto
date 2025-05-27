@@ -108,8 +108,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const embedUrl = videoUrl.replace("watch?v=", "embed/").replace("youtu.be/", "www.youtube.com/embed/");
 
             const iframe = document.createElement('iframe');
-            iframe.width = '600';
-            iframe.height = '360';
+            iframe.width = '100%';
+            iframe.height = '100%';
             iframe.src = embedUrl;
             iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
             iframe.allowFullscreen = true;
@@ -279,9 +279,12 @@ document.addEventListener('DOMContentLoaded', () => {
                             addBotMessage("Não encontrei nenhuma Soft Skill com esse nome, tente novamente:", 1000)
                             enableChat(2000);
                             messageCount--
+                            
+                        } else{
+                            addBotMessage("Deseja saber mais sobre outra SoftSkill?", 5000)
+                            addOptions([{text: 'Sim', value: 5}, {text: 'Não', value: 6}], 6500)
+                            break;
                         }
-                        addBotMessage("Deseja saber mais sobre outra SoftSkill?", 5000)
-                        addOptions([{text: 'Sim', value: 5}, {text: 'Não', value: 6}], 6500)
                         break;
                     }
                 case 4:
